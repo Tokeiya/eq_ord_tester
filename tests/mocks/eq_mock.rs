@@ -6,7 +6,7 @@ pub struct EqMock {
 
 impl PartialEq for EqMock {
 	fn eq(&self, other: &Self) -> bool {
-		todo!()
+		(self.eq)(other)
 	}
 
 	#[allow(clippy::partialeq_ne_impl)]
